@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us</title>
+<link href="AzharStyles.css" rel="stylesheet" type="text/css"> <!--This is where the HTML file is linked to AzharStyles.css-->
+<style type="text/css">
+body {font-family: Verdana;}
+* {box-sizing: border-box;}
+	
+input[type=text], select, textarea {  /*This is internal CSS for the form and the textboxes within them*/
+  width: 100%;
+height: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+	input[type=email], select, textarea {  /*This is internal CSS for the textbox within the email*/
+  width: 100%;
+	height: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+
+input[type=submit] { /*This is internal CSS for the textbox within the email*/
+  background-color: #454243;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {  /*This is internal CSS for the navigation bar when a button is hovered over*/
+  background-color: #ddd;
+  color: black;
+}
+
+
+	
+	
+	
+#RightContent1 {    /*This is the internal CSS for the Container that holds the interactive map in place*/
+	background-color: #000000;
+    height: 460px;
+    width: 460px;
+	margin-top: 60px;
+	margin-right: 50px;
+	float: right;
+}
+	
+
+#TextContainer1 {   /*This is the internal CSS for the space that contains the Form*/
+	background-color: #000000;
+    height: 460px;
+    width: 440px;
+	margin-left: 25px;
+	margin-right: 25px;
+	float: left;
+	
+}
+
+	
+</style>
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	
+</head>
+
+<body onLoad="MM_preloadImages('rolloverFacebook Logo.png','rolloverInstagram logo.jpg','rolloverTwitter logo.jpg')">
+<div id="Banner">      <!--This is where the div tag for the Banner starts-->
+	<img src="Banner.gif" width="1000" height="300" alt=""/>
+	
+</div> 
+	
+<div id="Navigation">   <!--This is where the div tag for the Navigation bar starts-->
+		<div class="topnav">
+  		<a href="Home.html">Home</a>
+  		<a href="Journey To Mars.html">Journey To Mars</a>
+  		<a href="Starship.html">Starship</a>
+  		<a href="Falcon 9.html">Falcon 9</a>
+		<a href="Falcon Heavy.html">Falcon Heavy</a>
+		<a href="Humans To Space.html">Humans To Space</a>
+		<a class="active" href="Contact Us.html">Contact Us</a>  <!--This is the active button which is linked externally within the CSS file-->
+	</div>
+</div>
+	
+<div id="Container">      <!--This is where the div tag for the Container starts-->
+
+	
+	
+	<div id="TextContainer1">	<!--This is where the div tag for the Text box container starts-->
+		<div id="TextHeader">	<h1>Contact Us</h1>   <!--This is where the div tag for the Text header starts-->
+	    </div>
+		<div id="TextBox">   <!--This is where the div tag for the Text box itself starts-->
+		
+  <form   
+	  action="https://formsubmit.co/Z36009@jcc.ac.uk" method="POST">   <!--This is where the div tag for the form starts-->
+	  <input type="hidden" name="_captcha" value="false">
+	  
+    <label for="fname" style="color: #F9F5F6" >First Name</label>
+    <input name="firstname" type="text" required="required" id="fname" placeholder="Enter your first name here" maxlength="50">
+
+    <label for="lname" style="color: #F9F5F6" >Last Name</label>
+    <input name="lastname" type="text" required="required" id="lname" placeholder="Enter your last name here" size="0" maxlength="50">
+
+    <label for="email" style="color: #F9F5F6" >Email</label>
+      <input name="email"  type="email" required="required" id="email" placeholder="Enter your Email Address here" maxlength="60">
+  
+
+    <label for="subject" style="color: #F9F5F6" >Subject</label>
+    <textarea name="subject" maxlength="500" required="required" id="subject" style="height:150px" placeholder="Write your message here"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+		
+		</div>
+  	</div>
+  
+	
+	<div id="RightContent1">    <!--This is where the div tag for the Map starts-->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2019.6709467017245!2d-118.32823718650818!3d33.92068468487633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5589bf4232c10232!2sSpacex!5e1!3m2!1sen!2suk!4v1635933521955!5m2!1sen!2suk" width="460" height="460" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+	
+	
+</div>
+	
+</div>	
+	
+	
+<div id="Footer"><!--This is where the div tag for the Footer starts--> 
+	
+<a href="https://www.facebook.com/spacenewsx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rolloverFacebook','','rolloverFacebook Logo.png',1)"><img src="Facebook logo.png" alt="" width="100" height="100" id="rolloverFacebook"></a> 
+	
+	<a href="https://www.instagram.com/spacex" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rolloverInstagram','','rolloverInstagram logo.jpg',1)"><img src="Instagram logo.jpg" alt="" width="100" height="100" id="rolloverInstagram"></a> 
+	
+	<a href="https://www.twitter.com/SpaceX" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rolloverTwitter','','rolloverTwitter logo.jpg',1)"><img src="Twitter logo.jpg" alt="" width="170" height="100" id="rolloverTwitter"></a> 	
+	
+	</div>
+
+	
+</body>
+</html>
